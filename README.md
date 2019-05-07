@@ -1,2 +1,2 @@
 # GenericSystemAPI
-API for the Soneritics Generic System
+API for the GenericSystem project
