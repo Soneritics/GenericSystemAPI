@@ -6,9 +6,9 @@ using System.Runtime.InteropServices;
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
 [assembly: AssemblyTitle("GenericSystemAPI")]
-[assembly: AssemblyDescription("")]
+[assembly: AssemblyDescription("API for the Soneritics Generic System")]
 [assembly: AssemblyConfiguration("")]
-[assembly: AssemblyCompany("")]
+[assembly: AssemblyCompany("Soneritics")]
 [assembly: AssemblyProduct("GenericSystemAPI")]
 [assembly: AssemblyCopyright("Copyright ©  2019")]
 [assembly: AssemblyTrademark("")]
