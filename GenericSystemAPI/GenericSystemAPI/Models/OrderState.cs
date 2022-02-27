@@ -1,9 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using Microsoft.SqlServer.Server;
+﻿using System.Collections.Generic;
 
 namespace GenericSystemAPI.Models
 {
@@ -11,5 +6,6 @@ namespace GenericSystemAPI.Models
     {
         public string state { get; set; }
         public List<string> result { get; set; }
+        public List<Order> orders { get; set; }
     }
 }

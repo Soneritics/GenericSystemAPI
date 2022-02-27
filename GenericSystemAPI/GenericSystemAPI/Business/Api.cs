@@ -1,13 +1,11 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.IO;
-using System.Linq;
 using System.Net;
 using System.Net.Security;
-using System.Text;
-using System.Threading.Tasks;
+using GenericSystemAPI.Exceptions;
+using GenericSystemAPI.Models;
 using Newtonsoft.Json;
-using Newtonsoft.Json.Linq;
 
 namespace GenericSystemAPI.Business
 {
@@ -67,8 +65,8 @@ namespace GenericSystemAPI.Business
                         responseText = reader.ReadToEnd();
                     }
 
-                    var errorObject = JsonConvert.DeserializeObject<JObject>(responseText);
-                    throw new Exception((string)errorObject["error"]);
+                    var errorObject = JsonConvert.DeserializeObject<ErrorModel>(responseText);
+                    throw new ApiException(errorObject);
                 }
             }
         }
